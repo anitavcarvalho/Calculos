@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace Calculos
 {
-    internal class Aritmetica
+    internal static class Aritmetica
     ///Implementa operações aritméticas
     {
-        public enum ConversaoTemperatura
+        public static enum ConversaoTemperatura
         {
             Nulo = 0
             CelsiusFarenheit,
             FarenheitCelsius
         }
-        public int Somar(int x, int y)
+        public static int Somar(int x, int y)
         /// Operação Soma
         {
             return x+y;
         }
-        public int Sub(int x, int y)
+        public static int Sub(int x, int y)
         /// Operação Subtração
         {
             return x-y;
         }
-        public double Converter(ConversaoTemperatura conversao, double temperatura)
+        public static double Converter(ConversaoTemperatura conversao, double temperatura)
         {
             if (conversao == ConversaoTemperatura.CelsiusFarenheit)
             {
